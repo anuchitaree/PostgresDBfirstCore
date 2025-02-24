@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext “Host=localhost;Database=Timecard;Username=postgres;Password=admin” Npgsql.EntityFrameworkCore.PostgreSQL -OutputDir Models
