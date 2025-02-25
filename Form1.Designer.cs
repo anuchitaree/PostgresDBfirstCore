@@ -33,11 +33,12 @@
             // 
             // Btn_reset
             // 
-            Btn_reset.Location = new Point(68, 92);
+            Btn_reset.Dock = DockStyle.Bottom;
+            Btn_reset.Location = new Point(0, 19);
             Btn_reset.Name = "Btn_reset";
-            Btn_reset.Size = new Size(104, 50);
+            Btn_reset.Size = new Size(264, 68);
             Btn_reset.TabIndex = 0;
-            Btn_reset.Text = "Reset";
+            Btn_reset.Text = "Reset all (Only today)";
             Btn_reset.UseVisualStyleBackColor = true;
             Btn_reset.Click += Btn_reset_Click;
             // 
@@ -45,10 +46,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(264, 87);
             Controls.Add(Btn_reset);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Utility dekidaka app.";
             Load += Form1_Load;
             ResumeLayout(false);
         }

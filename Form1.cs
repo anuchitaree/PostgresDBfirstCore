@@ -1,3 +1,4 @@
+
 using PostgresDBfirstCore.Models;
 
 namespace PostgresDBfirstCore
@@ -16,9 +17,21 @@ namespace PostgresDBfirstCore
 
         private void Btn_reset_Click(object sender, EventArgs e)
         {
-            using  (var db= new  TimecardContext())
+            using (var db = new dekidaka_local_dbContext())
             {
-                var result = db.TimecardRecords.ToList();
+                var today = DateOnly.FromDateTime(DateTime.Now);
+
+                var result = db.ScanBuffers.Where(x => x.OperationalDate == today).ToList();
+
+                db.ScanBuffers.RemoveRange(result);
+                db.SaveChanges();
+
+                var result1 = db.ShiftSlots.Where(x => x.OperationalDate == today).ToList();
+
+                db.ShiftSlots.RemoveRange(result1);
+                db.SaveChanges();
+
+                MessageBox.Show("Clean data in today completed", "info");
             }
         }
     }
