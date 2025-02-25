@@ -117,4 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>http://127.0.0.1:7500/
+username: 1234567
+password: As12345%
+
+Step by step
+1.open edge browser
+2.fill up production planning and choose 179730-01004T
+3.goto working page
+4.use scanner scan start lot on QR-code
+5.use scanner scan manpower lot on QR-code
+6.use mouse click at datetime (top right) and action start plan
+7.use scanner scan Kanban for starting lot
+if machine stuck in something that cannot control, please hit 
+below button to restart step again.
+Thank you for your attention.
+</value>
+  </data>
 </root>

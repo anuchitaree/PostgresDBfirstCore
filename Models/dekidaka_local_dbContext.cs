@@ -46,7 +46,7 @@ namespace PostgresDBfirstCore.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql("Host=192.168.100.117;Port=5450;Database=dekidaka_local_db;Username=postgres;Password=a1234A#A4321a");
+                optionsBuilder.UseNpgsql("Host=127.0.0.1;Port=5450;Database=dekidaka_local_db;Username=postgres;Password=a1234A#A4321a");
             }
         }
 
